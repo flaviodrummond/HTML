@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input's</title>
+</head>
+<body>
+<input autocomplete="street-address"> <!-- Armazena os dados para um preenchimento automático -->
+
+<input placeholder="Digite seu nome"> <!-- Texto fica dentro da input -->
+
+<label>
+    Nome:
+    <input autocomplete="name">
+</label>
+
+<!-- Existe duas formas para se utilizar um texto fora do input e as duas formas estão corretas-->
+
+<label for="cep">Cep:</label>
+<input id="cep" autocomplete="zip code">
+
+<label for="rua"> Rua:</label>
+<input id="rua" autocomplete="street-address" autofocus> <!-- Já leva o usuário direto ao preenchimento sem ele (a) precisar clicar dentro do input -->
+<br><br><br><br>
+<input type="range" min="0" max="10" value="0"> <!-- Controle deslizante -->
+
+<label>Senha:
+<input type="password"> <!-- Caixa de senha -->
+</label>
+
+<label> Número:
+<input type="number"> <!-- Preenchimento apenas com números -->
+</label>
+
+<label> Email:
+<input type="email"> <!-- Para preenchimento de e-mail --> <br><br>
+</label>
+<br>
+
+<label>
+    Você quer maionese extra ?
+    <input type="checkbox"> <!-- Type "Checkbox" cria uma caixinha de click de confirmação -->
+</label>
+<br>
+<br>
+<br>
+
+<input type="file"> <!-- Abre uma caixa de upload de arquivo -->
+
+<input type="file" multiple> <!-- Abre uma caixa de upload para vários arquivos -->
+
+<input type="file" accept="video/*"> <br><br><!-- Escolhe qual o tipo de arquivo pode fazer upload -->
+<br>
+
+<h2>Qual sua rede social favorita ?</h2>
+
+<label for="facebook">Facebook</label>
+<input type="radio" id="facebook" name="redes-sociais"> <!-- Type "radio" cria uma bolinha de confirmação, já o name, faz entender que todos pertence ao mesmo grupo, dando poder apenas para escolher uma opção -->
+<label for="instagram">Instagram</label>
+<input type="radio" id="instagram" name="redes-sociais">
+<label for="tiktok">TikTok</label>
+<input type="radio" id="tiktok" name="redes-sociais">
+
+</body>
+</html>
